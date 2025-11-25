@@ -116,65 +116,87 @@
     </section>
 
 
-<!-- ======================================================
-         FINAL & COMPLETE PORTFOLIO SECTION (WITH ICONS & GRADIENT)
-    ====================================================== -->
+
+
+
     <section id="portfolio" class="portfolio">
-        <div class="container">
-            <div class="section-title">
-                <h2>My Portfolio</h2>
-                <p>Here are some of the projects I've worked on. Click on any project to see the details.</p>
-            </div>
-
-            <ul id="portfolio-filters-final">
-                <li data-filter="*" class="filter-active">All</li>
-                <li data-filter=".filter-seo">SEO</li>
-                <li data-filter=".filter-ads">Paid Ads</li>
-                <li data-filter=".filter-smm">Social Media</li>
-                <li data-filter=".filter-data">Data & Analytics</li>
-            </ul>
-            
-            <div class="portfolio-container-final">
-                <a href="project-details.html" class="portfolio-card filter-data">
-                    <div class="portfolio-card-icon"><i class="fas fa-chart-line"></i></div>
-                    <div class="portfolio-card-title">Google Analytics (GA4) Setup</div>
-                </a>
-                <a href="project-details.html" class="portfolio-card filter-data">
-                    <div class="portfolio-card-icon"><i class="fas fa-bullseye"></i></div>
-                    <div class="portfolio-card-title">Pixel Integration & Conversion Tracking</div>
-                </a>
-                <a href="project-details.html" class="portfolio-card filter-data">
-                    <div class="portfolio-card-icon"><i class="fas fa-magnifying-glass-chart"></i></div>
-                    <div class="portfolio-card-title">Advanced Data Analysis</div>
-                </a>
-                <a href="project-details.html" class="portfolio-card filter-ads">
-                    <div class="portfolio-card-icon"><i class="fab fa-facebook"></i></div>
-                    <div class="portfolio-card-title">Facebook Ads Campaign</div>
-                </a>
-                <a href="project-details.html" class="portfolio-card filter-ads">
-                    <div class="portfolio-card-icon"><i class="fab fa-google"></i></div>
-                    <div class="portfolio-card-title">Google Ads Management</div>
-                </a>
-                <a href="project-details.html" class="portfolio-card filter-seo">
-                    <div class="portfolio-card-icon"><i class="fas fa-lightbulb"></i></div>
-                    <div class="portfolio-card-title">SEO Strategy</div>
-                </a>
-                <a href="project-details.html" class="portfolio-card filter-seo">
-                    <div class="portfolio-card-icon"><i class="fas fa-map-marked-alt"></i></div>
-                    <div class="portfolio-card-title">Local SEO Optimization</div>
-                </a>
-                <a href="project-details.html" class="portfolio-card filter-smm">
-                    <div class="portfolio-card-icon"><i class="fas fa-pen-nib"></i></div>
-                    <div class="portfolio-card-title">Content Marketing</div>
-                </a>
-                <a href="project-details.html" class="portfolio-card filter-smm">
-                    <div class="portfolio-card-icon"><i class="fas fa-users"></i></div>
-                    <div class="portfolio-card-title">Social Media Management</div>
-                </a>
-            </div>
+    <div class="container">
+        <div class="section-title">
+            <h2>My Portfolio</h2>
+            <p>Here are some of the projects I've worked on. Click on any project to see the details.</p>
         </div>
-    </section>
 
+        <!-- ফিল্টার বাটনগুলো তোমার ক্যাটাগরি অনুযায়ী ঠিক রাখা হয়েছে -->
+        <ul id="portfolio-filters-final">
+            <li data-filter="*" class="filter-active">All</li>
+            <li data-filter=".filter-ads">Paid Ads</li>
+            <li data-filter=".filter-seo">SEO & Web</li>
+            <li data-filter=".filter-smm">Social Media</li>
+            <li data-filter=".filter-data">Data & Tracking</li>
+        </ul>
+        
+        <div class="portfolio-container-final">
+            
+            <!-- 1. Facebook Ads -->
+            <a href="project-fbads.html" class="portfolio-card filter-ads">
+                <div class="portfolio-card-icon"><i class="fab fa-facebook"></i></div>
+                <div class="portfolio-card-title">Facebook Ads <br><span style="font-size: 14px; font-weight: normal;">Advanced Audience Targeting</span></div>
+            </a>
+
+            <!-- 2. Google Ads -->
+            <a href="project-googleads.html" class="portfolio-card filter-ads">
+                <div class="portfolio-card-icon"><i class="fab fa-google"></i></div>
+                <div class="portfolio-card-title">Google Ads <br><span style="font-size: 14px; font-weight: normal;">High-ROI Campaigns</span></div>
+            </a>
+
+            <!-- 3. Tracking, Pixels & Scripts -->
+            <a href="project-pixel.html" class="portfolio-card filter-data">
+                <div class="portfolio-card-icon"><i class="fas fa-bullseye"></i></div>
+                <div class="portfolio-card-title">Tracking, Pixels & Scripts <br><span style="font-size: 14px; font-weight: normal;">Accurate Conversion Tracking</span></div>
+            </a>
+
+            <!-- 4. Instagram & Pinterest Marketing -->
+            <a href="project-social.html" class="portfolio-card filter-smm">
+                <div class="portfolio-card-icon"><i class="fab fa-instagram"></i></div>
+                <div class="portfolio-card-title">Instagram & Pinterest Marketing <br><span style="font-size: 14px; font-weight: normal;">Engagement & Conversions</span></div>
+            </a>
+
+            <!-- 5. SEO & SEM -->
+            <a href="project-seo.html" class="portfolio-card filter-seo">
+                <div class="portfolio-card-icon"><i class="fas fa-search"></i></div>
+                <div class="portfolio-card-title">SEO & SEM <br><span style="font-size: 14px; font-weight: normal;">Boosting Search Rankings</span></div>
+            </a>
+
+            <!-- 6. Google Analytics 4 (GA4) -->
+            <a href="project-ga4.html" class="portfolio-card filter-data">
+                <div class="portfolio-card-icon"><i class="fas fa-chart-line"></i></div>
+                <div class="portfolio-card-title">Google Analytics 4 (GA4) <br><span style="font-size: 14px; font-weight: normal;">Tracking & Optimization</span></div>
+            </a>
+
+            <!-- 7. Landing Pages & Funnels -->
+            <a href="project-funnel.html" class="portfolio-card filter-ads">
+                <div class="portfolio-card-icon"><i class="fas fa-filter"></i></div>
+                <div class="portfolio-card-title">Landing Pages & Funnels <br><span style="font-size: 14px; font-weight: normal;">Optimized for Conversions</span></div>
+            </a>
+
+            <!-- 8. Google Tag Manager & Data Studio -->
+            <a href="project-gtm.html" class="portfolio-card filter-data">
+                <div class="portfolio-card-icon"><i class="fas fa-tags"></i></div>
+                <div class="portfolio-card-title">GTM & Looker Studio <br><span style="font-size: 14px; font-weight: normal;">Advanced Reporting</span></div>
+            </a>
+
+            <!-- 9. Website Management -->
+            <a href="project-web.html" class="portfolio-card filter-seo">
+                <div class="portfolio-card-icon"><i class="fas fa-laptop-code"></i></div>
+                <div class="portfolio-card-title">Website Management <br><span style="font-size: 14px; font-weight: normal;">Maintenance & Updates</span></div>
+            </a>
+
+        </div>
+    </div>
+</section>
+
+
+    
 
     
 
@@ -359,6 +381,7 @@
 
 </body>
 </html>
+
 
 
 
