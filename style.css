@@ -1064,3 +1064,120 @@ font-weight: 700;
     height: 2px;
     background: var(--primary-color);
 }
+
+
+
+
+
+
+
+
+
+
+
+/* =========================================
+   Portfolio Page - Premium Violet Glass Theme
+   ========================================= */
+
+/* ব্যাকগ্রাউন্ড হবে ডিপ পার্পল/ভায়োলেট */
+.portfolio-section {
+    background: linear-gradient(135deg, #240b36 0%, #c31432 100%); /* Deep Violet Gradient */
+    padding: 80px 0;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+}
+
+.section-title h2, .section-title p {
+    color: #fff !important; /* টেক্সট সাদা হবে */
+}
+
+/* ফিল্টার বাটন ডিজাইন */
+#portfolio-filters-final li {
+    color: #fff;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(5px);
+}
+
+#portfolio-filters-final li:hover, 
+#portfolio-filters-final li.filter-active {
+    background: #fff;
+    color: #240b36;
+    font-weight: bold;
+}
+
+/* গ্লাস কার্ড ডিজাইন */
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.glass-card {
+    background: rgba(255, 255, 255, 0.1); /* কাঁচের মতো স্বচ্ছ */
+    backdrop-filter: blur(12px);          /* ব্লার এফেক্ট */
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 20px;
+    padding: 30px;
+    text-align: center;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    position: relative;
+    overflow: hidden;
+}
+
+/* হোভার এফেক্ট */
+.glass-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+    border-color: rgba(255, 255, 255, 0.5);
+    background: rgba(255, 255, 255, 0.15);
+}
+
+/* আইকন ডিজাইন */
+.glass-icon {
+    width: 70px;
+    height: 70px;
+    background: linear-gradient(135deg, #ff00cc, #333399); /* আইকনের ব্যাকগ্রাউন্ড গ্র্যাডিয়েন্ট */
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 20px;
+    font-size: 1.8rem;
+    color: #fff;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+/* টেক্সট স্টাইল */
+.glass-card h3 {
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+.glass-card p {
+    font-size: 0.9rem;
+    color: #ddd; /* হালকা ধূসর টেক্সট */
+    line-height: 1.5;
+}
+
+/* হোভার করলে নিচে একটি রঙিন বার আসবে */
+.hover-line {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 4px;
+    background: #ff00cc;
+    transition: width 0.4s ease;
+}
+
+.glass-card:hover .hover-line {
+    width: 100%;
+}
