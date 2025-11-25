@@ -970,3 +970,54 @@ font-weight: 700;
     font-size: 0.95rem;
     color: #666;
 }
+
+
+
+
+
+
+/* ফ্লোটিং হোয়াটসঅ্যাপ বাটন ডিজাইন */
+.whatsapp-float {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 30px; /* নিচ থেকে কতটা উপরে থাকবে */
+    right: 30px;  /* ডান দিক থেকে কতটা বামে থাকবে */
+    background-color: #25d366; /* হোয়াটসঅ্যাপের অফিসিয়াল কালার */
+    color: #FFF;
+    border-radius: 50%; /* গোল শেপ */
+    text-align: center;
+    font-size: 35px; /* আইকনের সাইজ */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    z-index: 10000; /* সবকিছুর উপরে থাকার জন্য */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    animation: pulse 2s infinite; /* বাটনটি একটু নড়বে যাতে চোখে পড়ে */
+}
+
+.whatsapp-float:hover {
+    background-color: #128c7e; /* হোভার করলে গাঢ় হবে */
+    color: #fff;
+    transform: scale(1.1); /* একটু বড় হবে */
+}
+
+/* পালস এনিমেশন (দৃষ্টি আকর্ষণের জন্য) */
+@keyframes pulse {
+	0% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7); }
+	70% { box-shadow: 0 0 0 15px rgba(37, 211, 102, 0); }
+	100% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0); }
+}
+
+/* মোবাইলের জন্য একটু ছোট এবং পজিশন ঠিক করা */
+@media (max-width: 768px) {
+    .whatsapp-float {
+        width: 50px;
+        height: 50px;
+        bottom: 20px;
+        right: 20px;
+        font-size: 28px;
+    }
+}
