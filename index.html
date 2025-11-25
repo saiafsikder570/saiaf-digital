@@ -123,81 +123,102 @@
 
 
 
-    <section id="portfolio" class="portfolio">
+    
+
+    <!-- Portfolio Section with Glassmorphism -->
+<section id="portfolio" class="portfolio-section">
     <div class="container">
         <div class="section-title">
             <h2>My Portfolio</h2>
-            <p>Here are some of the projects I've worked on. Click on any project to see the details.</p>
+            <p>Explore my latest projects and success stories.</p>
         </div>
 
-        <!-- ফিল্টার বাটনগুলো তোমার ক্যাটাগরি অনুযায়ী ঠিক রাখা হয়েছে -->
+        <!-- ফিল্টার বাটন -->
         <ul id="portfolio-filters-final">
             <li data-filter="*" class="filter-active">All</li>
             <li data-filter=".filter-ads">Paid Ads</li>
             <li data-filter=".filter-seo">SEO & Web</li>
-            <li data-filter=".filter-smm">Social Media</li>
             <li data-filter=".filter-data">Data & Tracking</li>
         </ul>
         
-        <div class="portfolio-container-final">
+        <div class="portfolio-grid">
             
             <!-- 1. Facebook Ads -->
-            <a href="project-fbads.html" class="portfolio-card filter-ads">
-                <div class="portfolio-card-icon"><i class="fab fa-facebook"></i></div>
-                <div class="portfolio-card-title">Facebook Ads <br><span style="font-size: 14px; font-weight: normal;">Advanced Audience Targeting</span></div>
+            <a href="project-fbads.html" class="glass-card filter-ads">
+                <div class="glass-icon"><i class="fab fa-facebook-f"></i></div>
+                <h3>Facebook Ads</h3>
+                <p>Advanced Audience Targeting & ROI Boosting Strategies.</p>
+                <div class="hover-line"></div>
             </a>
 
             <!-- 2. Google Ads -->
-            <a href="project-googleads.html" class="portfolio-card filter-ads">
-                <div class="portfolio-card-icon"><i class="fab fa-google"></i></div>
-                <div class="portfolio-card-title">Google Ads <br><span style="font-size: 14px; font-weight: normal;">High-ROI Campaigns</span></div>
+            <a href="project-googleads.html" class="glass-card filter-ads">
+                <div class="glass-icon"><i class="fab fa-google"></i></div>
+                <h3>Google Ads</h3>
+                <p>High-converting Search, Display & Video Campaigns.</p>
+                <div class="hover-line"></div>
             </a>
 
-            <!-- 3. Tracking, Pixels & Scripts -->
-            <a href="project-pixel.html" class="portfolio-card filter-data">
-                <div class="portfolio-card-icon"><i class="fas fa-bullseye"></i></div>
-                <div class="portfolio-card-title">Tracking, Pixels & Scripts <br><span style="font-size: 14px; font-weight: normal;">Accurate Conversion Tracking</span></div>
+            <!-- 3. Data Tracking -->
+            <a href="project-pixel.html" class="glass-card filter-data">
+                <div class="glass-icon"><i class="fas fa-chart-line"></i></div>
+                <h3>Tracking & Analytics</h3>
+                <p>Pixel Setup, Conversion API & GA4 Integration.</p>
+                <div class="hover-line"></div>
             </a>
 
-            <!-- 4. Instagram & Pinterest Marketing -->
-            <a href="project-social.html" class="portfolio-card filter-smm">
-                <div class="portfolio-card-icon"><i class="fab fa-instagram"></i></div>
-                <div class="portfolio-card-title">Instagram & Pinterest Marketing <br><span style="font-size: 14px; font-weight: normal;">Engagement & Conversions</span></div>
+            <!-- 4. SEO -->
+            <a href="project-seo.html" class="glass-card filter-seo">
+                <div class="glass-icon"><i class="fas fa-search"></i></div>
+                <h3>SEO Optimization</h3>
+                <p>Rank higher on Google with White-hat SEO techniques.</p>
+                <div class="hover-line"></div>
             </a>
 
-            <!-- 5. SEO & SEM -->
-            <a href="project-seo.html" class="portfolio-card filter-seo">
-                <div class="portfolio-card-icon"><i class="fas fa-search"></i></div>
-                <div class="portfolio-card-title">SEO & SEM <br><span style="font-size: 14px; font-weight: normal;">Boosting Search Rankings</span></div>
+            <!-- 5. Social Media -->
+            <a href="project-social.html" class="glass-card filter-smm">
+                <div class="glass-icon"><i class="fas fa-share-alt"></i></div>
+                <h3>Social Media Marketing</h3>
+                <p>Organic growth strategies for Instagram, LinkedIn & X.</p>
+                <div class="hover-line"></div>
             </a>
 
-            <!-- 6. Google Analytics 4 (GA4) -->
-            <a href="project-ga4.html" class="portfolio-card filter-data">
-                <div class="portfolio-card-icon"><i class="fas fa-chart-line"></i></div>
-                <div class="portfolio-card-title">Google Analytics 4 (GA4) <br><span style="font-size: 14px; font-weight: normal;">Tracking & Optimization</span></div>
+            <!-- 6. Funnel Strategy -->
+            <a href="project-funnel.html" class="glass-card filter-ads">
+                <div class="glass-icon"><i class="fas fa-filter"></i></div>
+                <h3>Sales Funnel</h3>
+                <p>Converting cold traffic into loyal customers.</p>
+                <div class="hover-line"></div>
             </a>
 
-            <!-- 7. Landing Pages & Funnels -->
-            <a href="project-funnel.html" class="portfolio-card filter-ads">
-                <div class="portfolio-card-icon"><i class="fas fa-filter"></i></div>
-                <div class="portfolio-card-title">Landing Pages & Funnels <br><span style="font-size: 14px; font-weight: normal;">Optimized for Conversions</span></div>
+            <!-- 7. Web Management -->
+            <a href="project-web.html" class="glass-card filter-seo">
+                <div class="glass-icon"><i class="fas fa-laptop-code"></i></div>
+                <h3>Website Management</h3>
+                <p>WordPress speed optimization & maintenance.</p>
+                <div class="hover-line"></div>
             </a>
 
-            <!-- 8. Google Tag Manager & Data Studio -->
-            <a href="project-gtm.html" class="portfolio-card filter-data">
-                <div class="portfolio-card-icon"><i class="fas fa-tags"></i></div>
-                <div class="portfolio-card-title">GTM & Looker Studio <br><span style="font-size: 14px; font-weight: normal;">Advanced Reporting</span></div>
+            <!-- 8. GTM & Looker -->
+            <a href="project-gtm.html" class="glass-card filter-data">
+                <div class="glass-icon"><i class="fas fa-tags"></i></div>
+                <h3>GTM & Looker Studio</h3>
+                <p>Advanced Tag Management & Data Visualization.</p>
+                <div class="hover-line"></div>
             </a>
 
-            <!-- 9. Website Management -->
-            <a href="project-web.html" class="portfolio-card filter-seo">
-                <div class="portfolio-card-icon"><i class="fas fa-laptop-code"></i></div>
-                <div class="portfolio-card-title">Website Management <br><span style="font-size: 14px; font-weight: normal;">Maintenance & Updates</span></div>
+            <!-- 9. Content Strategy -->
+            <a href="project-content.html" class="glass-card filter-smm">
+                <div class="glass-icon"><i class="fas fa-pen-nib"></i></div>
+                <h3>Content Strategy</h3>
+                <p>Engaging content planning for better reach.</p>
+                <div class="hover-line"></div>
             </a>
 
         </div>
     </div>
 </section>
+
 
 
     
@@ -402,6 +423,7 @@
 
 </body>
 </html>
+
 
 
 
