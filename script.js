@@ -21,3 +21,40 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 });
+
+
+
+
+
+
+
+
+// মোবাইল মেনু টগল করার কোড
+const mobileBtn = document.querySelector('.mobile-menu-btn');
+const navMenu = document.querySelector('.navbar nav');
+
+if(mobileBtn) {
+    mobileBtn.addEventListener('click', () => {
+        navMenu.classList.toggle('active');
+        
+        // আইকন পরিবর্তন (অপশনাল)
+        const icon = mobileBtn.querySelector('i');
+        if(navMenu.classList.contains('active')) {
+            icon.classList.remove('fa-bars');
+            icon.classList.add('fa-times'); // ক্রস আইকন
+        } else {
+            icon.classList.remove('fa-times');
+            icon.classList.add('fa-bars'); // বার আইকন
+        }
+    });
+}
+
+// মেনুর লিংকে ক্লিক করলে মেনু বন্ধ হবে
+function closeMenu() {
+    if(navMenu.classList.contains('active')) {
+        navMenu.classList.remove('active');
+        const icon = mobileBtn.querySelector('i');
+        icon.classList.remove('fa-times');
+        icon.classList.add('fa-bars');
+    }
+}
