@@ -825,3 +825,41 @@ font-weight: 700;
     from { opacity: 0; transform: translateY(-10px); }
     to { opacity: 1; transform: translateY(0); }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+/* সলিউশন পেজের আইকন এবং বর্ডার ফিক্স (সব বেগুনি হবে) */
+.trio-icon {
+    color: var(--primary-color) !important; /* আইকন বেগুনি */
+    border: 2px solid var(--primary-color); /* বর্ডার বেগুনি */
+    padding: 15px;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 20px auto;
+}
+
+.trio-card {
+    border-top: 5px solid var(--primary-color); /* কার্ডের উপরের রেখা বেগুনি */
+}
+
+.trio-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(106, 13, 173, 0.2);
+}
+
+.section-subtitle {
+    color: var(--primary-color) !important; /* সাবটাইটেল বেগুনি */
+}
