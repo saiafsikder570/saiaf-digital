@@ -1181,3 +1181,130 @@ font-weight: 700;
 .glass-card:hover .hover-line {
     width: 100%;
 }
+
+
+
+
+
+
+/* =========================================
+   Portfolio Page - Clean Purple Glass Theme
+   ========================================= */
+
+/* ব্যাকগ্রাউন্ড এখন হালকা এবং ওয়েবসাইটের সাথে মানানসই */
+.portfolio-section {
+    background: linear-gradient(135deg, #fdfbfd 0%, #f4edff 100%); /* Soft White-Purple */
+    padding: 80px 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.section-title h2 {
+    color: #6a0dad !important; /* টাইটেল বেগুনি */
+    font-weight: 700;
+}
+
+.section-title p {
+    color: #666 !important;
+}
+
+/* ফিল্টার বাটন ডিজাইন */
+#portfolio-filters-final li {
+    color: #555;
+    border: 1px solid #ddd;
+    background: #fff;
+    padding: 8px 20px;
+    border-radius: 30px;
+    font-size: 14px;
+    font-weight: 600;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+#portfolio-filters-final li:hover, 
+#portfolio-filters-final li.filter-active {
+    background: #6a0dad; /* সক্রিয় হলে বেগুনি */
+    color: #fff;
+    border-color: #6a0dad;
+    box-shadow: 0 5px 15px rgba(106, 13, 173, 0.2);
+}
+
+/* কার্ড গ্রিড */
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+/* গ্লাস কার্ড (সাদা ব্যাকগ্রাউন্ডে মানানসই) */
+.glass-card {
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(15px);
+    border: 1px solid rgba(106, 13, 173, 0.1); /* হালকা বেগুনি বর্ডার */
+    border-radius: 15px;
+    padding: 30px;
+    text-align: center;
+    transition: all 0.4s ease;
+    text-decoration: none;
+    display: block;
+    position: relative;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    overflow: hidden;
+}
+
+.glass-card:hover {
+    transform: translateY(-10px);
+    background: #fff;
+    box-shadow: 0 20px 40px rgba(106, 13, 173, 0.15);
+    border-color: #6a0dad;
+}
+
+/* আইকন ডিজাইন */
+.glass-icon {
+    width: 70px;
+    height: 70px;
+    background: #f3e5f5; /* খুব হালকা বেগুনি */
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 20px;
+    font-size: 1.8rem;
+    color: #6a0dad; /* আইকন বেগুনি */
+    transition: all 0.4s ease;
+}
+
+.glass-card:hover .glass-icon {
+    background: #6a0dad;
+    color: #fff;
+    transform: rotate(360deg);
+}
+
+/* টেক্সট */
+.glass-card h3 {
+    font-size: 1.3rem;
+    margin-bottom: 8px;
+    color: #333;
+    font-weight: 700;
+}
+
+.glass-card p {
+    font-size: 0.9rem;
+    color: #777;
+}
+
+/* নিচের লাইন এনিমেশন */
+.hover-line {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 4px;
+    background: linear-gradient(90deg, #6a0dad, #9c27b0);
+    transition: width 0.4s ease;
+}
+
+.glass-card:hover .hover-line {
+    width: 100%;
+}
