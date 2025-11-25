@@ -3,21 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Google Ads – Data-driven, high-ROI campaigns</title> <!-- পেজ অনুযায়ী নাম বদলে দিও -->
-    <link rel="stylesheet" href="style.css?v=2.2">
+    <title>Google Ads</title>
+    <link rel="stylesheet" href="style.css?v=2.4">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <style>
+        /* ফ্লেক্সিবল গ্যালারি ডিজাইন */
+        .project-gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin-top: 30px;
+        }
+        
+        /* ছবিগুলো অটোমেটিক সুন্দরভাবে ফিট হবে */
+        .project-gallery img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+            object-fit: cover; /* ল্যান্ডস্কেপ বা পোর্ট্রেট—সব সুন্দর লাগবে */
+        }
+
+        .project-gallery img:hover {
+            transform: scale(1.02);
+        }
+
+        /* লেখার স্টাইল */
+        .project-description {
+            margin-top: 40px;
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: #444;
+        }
+
+        .project-description h3 {
+            color: var(--primary-color);
+            margin-top: 30px;
+            margin-bottom: 15px;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 10px;
+        }
+    </style>
 </head>
 <body class="project-page">
 
-    <!-- Header Section -->
+    <!-- হেডার (মেনু) -->
     <header class="navbar">
         <div class="container">
             <a href="index.html" class="logo">SaiafDigital</a>
-            
-            <div class="mobile-menu-btn">
-                <i class="fas fa-bars"></i>
-            </div>
-
+            <div class="mobile-menu-btn"><i class="fas fa-bars"></i></div>
             <nav class="nav-menu">
                 <ul>
                     <li><a href="index.html">Home</a></li>
@@ -34,18 +69,17 @@
 
     <div class="container project-details-container">
         
-        <!-- Project Title (এটা পরিবর্তন করবে) -->
-        <h1>Google Ads – Data-driven, high-ROI campaigns</h1>
+        <!-- প্রজেক্টের টাইটেল (এখানে নাম বদলাও) -->
+        <h1>Facebook Ads Campaign Strategy</h1>
 
-        <!-- Main Project Image -->
-        <!-- তুমি চাইলে পরে ইমেজ চেঞ্জ করতে পারবে, আপাতত এটা থাক -->
-        <img src="https://i.ibb.co/L05f9gS/boost-your-business-banner.png" alt="Project Banner" class="project-banner-image">
-
-        <!-- Project Description (এটা পরিবর্তন করবে) -->
+        <!-- বিস্তারিত বিবরণ (এখানে যত খুশি লেখা দাও) -->
         <div class="project-description">
             <p><strong>Overview:</strong> এই প্রজেক্টে আমি ক্লায়েন্টের জন্য ফেসবুক অ্যাডের মাধ্যমে টার্গেটেড অডিয়েন্স খুঁজে বের করেছি এবং সেলস বৃদ্ধি করেছি।</p>
 
             <h3>My Strategy & Work Process:</h3>
+            <p>এখানে তুমি বিস্তারিত প্রসেস লিখতে পারো। প্যারাগ্রাফ ১...</p>
+            <p>প্যারাগ্রাফ ২...</p>
+            
             <ul>
                 <li><i class="fas fa-check-circle"></i> অডিয়েন্স রিসার্চ এবং টার্গেটিং সেটআপ।</li>
                 <li><i class="fas fa-check-circle"></i> হাই-কনভার্টিং অ্যাড কপি এবং ক্রিয়েটিভ ডিজাইন।</li>
@@ -56,10 +90,25 @@
             <p>ক্যাম্পেইন শেষে ক্লায়েন্টের ROI ২০০% বৃদ্ধি পেয়েছে এবং লিড কস্ট ৩০% কমেছে।</p>
         </div>
 
-        <a href="index.html#portfolio" class="cta-button" style="display:inline-block; margin-top:20px;">← Back to Portfolio</a>
+        <!-- গ্যালারি সেকশন (এখানে যত খুশি ছবি যোগ করো) -->
+        <div class="project-gallery">
+            <!-- ছবি ১ -->
+            <img src="https://i.ibb.co/L05f9gS/boost-your-business-banner.png" alt="Screenshot 1">
+            
+            <!-- ছবি ২ -->
+            <img src="https://via.placeholder.com/400x600" alt="Screenshot 2 (Portrait)">
+            
+            <!-- ছবি ৩ -->
+            <img src="https://via.placeholder.com/600x400" alt="Screenshot 3 (Landscape)">
+            
+            <!-- ছবি ৪ (চাইলে আরও দাও) -->
+            <img src="https://via.placeholder.com/600x400" alt="Screenshot 4">
+        </div>
+
+        <a href="index.html#portfolio" class="cta-button" style="display:inline-block; margin-top:40px;">← Back to Portfolio</a>
     </div>
 
-    <!-- Footer -->
+    <!-- ফুটার -->
     <footer class="new-footer">
         <div class="container">
             <div class="footer-bottom">
