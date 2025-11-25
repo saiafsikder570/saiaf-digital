@@ -732,3 +732,73 @@ font-weight: 700;
         flex-direction: column;
     }
 }
+
+
+
+
+
+
+
+
+
+
+/* মোবাইল মেনু বাটন ডিজাইন */
+.mobile-menu-btn {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: var(--primary-color);
+}
+
+/* মোবাইল রেসপন্সিভ স্টাইল */
+@media (max-width: 768px) {
+    .navbar .container {
+        position: relative;
+    }
+
+    .mobile-menu-btn {
+        display: block; /* মোবাইলে বাটন দেখা যাবে */
+    }
+
+    .navbar nav {
+        display: none; /* ডিফল্টভাবে মেনু লুকানো থাকবে */
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: #fff;
+        box-shadow: 0 10px 15px rgba(0,0,0,0.1);
+        padding: 20px 0;
+        text-align: center;
+        border-top: 1px solid #eee;
+    }
+
+    /* যখন জাভাস্ক্রিপ্ট দিয়ে 'active' ক্লাস যোগ হবে, তখন মেনু দেখাবে */
+    .navbar nav.active {
+        display: block;
+    }
+
+    .navbar ul {
+        flex-direction: column; /* মেনুগুলো নিচে নিচে আসবে */
+        gap: 15px;
+    }
+
+    /* হিরো সেকশন এবং অন্যান্য ফন্টের সাইজ ফিক্স */
+    .hero-content {
+        flex-direction: column-reverse; /* ছবি উপরে, লেখা নিচে */
+        text-align: center;
+        padding-top: 20px;
+    }
+    
+    .hero-text {
+        padding: 0 15px;
+    }
+    
+    .hero-image-wrapper {
+        margin-bottom: 30px;
+    }
+    
+    .about-flex-container-final {
+        flex-direction: column;
+    }
+}
