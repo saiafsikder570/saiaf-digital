@@ -1028,3 +1028,39 @@ font-weight: 700;
         font-size: 24px;
     }
 }
+
+
+
+
+
+/* পিনটারেস্ট আইকন কালার */
+.footer-social-links a[title="Pinterest"]:hover {
+    background-color: #E60023;
+    border-color: #E60023;
+    color: #fff;
+}
+
+/* ফুটার টেক্সট জাস্টিফাই এবং ফন্ট সাইজ ফিক্স */
+.footer-about-text {
+    text-align: justify;
+    font-size: 0.95rem;
+    line-height: 1.8;
+    color: #555;
+    margin-bottom: 25px;
+}
+
+.footer-col h4 {
+    position: relative;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.footer-col h4::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 50px;
+    height: 2px;
+    background: var(--primary-color);
+}
