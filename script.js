@@ -58,3 +58,32 @@ function closeMenu() {
         icon.classList.add('fa-bars');
     }
 }
+
+
+
+
+
+
+
+
+
+
+// সব পেজে অটোমেটিক হোয়াটসঅ্যাপ বাটন যোগ করার কোড
+document.addEventListener("DOMContentLoaded", function() {
+    
+    // ১. লিংকের জন্য 'a' ট্যাগ তৈরি
+    var waBtn = document.createElement("a");
+    // তোমার নম্বর এখানে সেট করা হলো (কান্ট্রি কোড সহ)
+    waBtn.href = "https://wa.me/8801609942974"; 
+    waBtn.target = "_blank"; // নতুন ট্যাবে ওপেন হবে
+    waBtn.className = "whatsapp-float"; // CSS ক্লাস যুক্ত করা হলো
+    waBtn.title = "Chat on WhatsApp"; // মাউস নিলে লেখা দেখাবে
+
+    // ২. আইকনের জন্য 'i' ট্যাগ তৈরি
+    var waIcon = document.createElement("i");
+    waIcon.className = "fab fa-whatsapp"; // FontAwesome আইকন
+
+    // ৩. বাটনটি জোড়া লাগানো
+    waBtn.appendChild(waIcon);
+    document.body.appendChild(waBtn);
+});
