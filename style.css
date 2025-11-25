@@ -742,63 +742,86 @@ font-weight: 700;
 
 
 
-/* মোবাইল মেনু বাটন ডিজাইন */
+/* মোবাইল মেনু বাটন ডিজাইন (সুন্দর বক্স স্টাইল) */
 .mobile-menu-btn {
     display: none;
-    font-size: 24px;
+    font-size: 20px;
     cursor: pointer;
     color: var(--primary-color);
+    border: 2px solid var(--primary-color); /* বর্ডার দেয়া হলো */
+    padding: 5px 10px; /* প্যাডিং দিয়ে বাটন বড় করা হলো */
+    border-radius: 5px; /* কোণাগুলো গোল করা হলো */
+    transition: all 0.3s ease;
+}
+
+.mobile-menu-btn:hover {
+    background-color: var(--primary-color);
+    color: #fff;
 }
 
 /* মোবাইল রেসপন্সিভ স্টাইল */
 @media (max-width: 768px) {
     .navbar .container {
+        display: flex;
+        justify-content: space-between; /* লোগো বামে, বাটন ডানে */
+        align-items: center;
         position: relative;
     }
 
     .mobile-menu-btn {
-        display: block; /* মোবাইলে বাটন দেখা যাবে */
+        display: block; 
     }
 
+    /* মেনু ড্রপডাউন ডিজাইন */
     .navbar nav {
-        display: none; /* ডিফল্টভাবে মেনু লুকানো থাকবে */
+        display: none;
         position: absolute;
-        top: 100%;
+        top: 100%; /* হেডারের ঠিক নিচে আসবে */
         left: 0;
         width: 100%;
-        background: #fff;
-        box-shadow: 0 10px 15px rgba(0,0,0,0.1);
+        background: #fff; /* ব্যাকগ্রাউন্ড সাদা */
+        box-shadow: 0 15px 30px rgba(0,0,0,0.2); /* শ্যাডো দেয়া হলো */
         padding: 20px 0;
         text-align: center;
-        border-top: 1px solid #eee;
+        border-top: 2px solid var(--primary-color);
+        z-index: 9999; /* সমস্যা ২ সমাধান: এটা এখন সব লেখার উপরে থাকবে */
     }
 
-    /* যখন জাভাস্ক্রিপ্ট দিয়ে 'active' ক্লাস যোগ হবে, তখন মেনু দেখাবে */
     .navbar nav.active {
         display: block;
+        animation: slideDown 0.3s ease-in-out;
     }
 
     .navbar ul {
-        flex-direction: column; /* মেনুগুলো নিচে নিচে আসবে */
-        gap: 15px;
+        flex-direction: column;
+        gap: 20px;
+        padding: 0;
     }
 
-    /* হিরো সেকশন এবং অন্যান্য ফন্টের সাইজ ফিক্স */
+    /* মেনু আইটেমগুলোর ফন্ট ডিজাইন (সমস্যা ২ সমাধান) */
+    .navbar ul li a {
+        font-size: 18px; /* ফন্ট বড় করা হলো */
+        font-weight: 700; /* ফন্ট বোল্ড করা হলো */
+        color: #333;
+        display: block;
+        padding: 10px;
+    }
+
+    .navbar ul li a:hover {
+        color: var(--primary-color);
+        background-color: #f4f4f4;
+    }
+
+    /* হিরো সেকশন ফিক্স */
     .hero-content {
-        flex-direction: column-reverse; /* ছবি উপরে, লেখা নিচে */
+        flex-direction: column-reverse;
         text-align: center;
-        padding-top: 20px;
+        padding-top: 30px;
     }
-    
-    .hero-text {
-        padding: 0 15px;
-    }
-    
-    .hero-image-wrapper {
-        margin-bottom: 30px;
-    }
-    
-    .about-flex-container-final {
-        flex-direction: column;
-    }
+}
+
+/* মেনু স্লাইড এনিমেশন */
+@keyframes slideDown {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
 }
