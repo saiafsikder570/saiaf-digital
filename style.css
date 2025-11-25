@@ -910,3 +910,63 @@ font-weight: 700;
         transform: translateY(-5px);
     }
 }
+
+
+
+
+
+
+/* কন্টাক্ট বক্স ডিজাইন */
+.contact-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    justify-content: center;
+}
+
+.contact-info-box {
+    text-decoration: none;
+    background: #fff;
+    padding: 40px 20px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+    transition: all 0.3s ease;
+    border: 1px solid #eee;
+    display: block;
+    color: #444;
+}
+
+.contact-info-box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 30px rgba(106, 13, 173, 0.15);
+    border-color: var(--primary-color);
+}
+
+.info-box-icon {
+    font-size: 30px;
+    color: var(--primary-color);
+    background: #f4edff;
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+    border-radius: 50%;
+    margin: 0 auto 20px auto;
+    transition: all 0.3s ease;
+}
+
+.contact-info-box:hover .info-box-icon {
+    background: var(--primary-color);
+    color: #fff;
+}
+
+.contact-info-box h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.contact-info-box p {
+    font-size: 0.95rem;
+    color: #666;
+}
