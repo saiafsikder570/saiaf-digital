@@ -863,3 +863,50 @@ font-weight: 700;
 .section-subtitle {
     color: var(--primary-color) !important; /* সাবটাইটেল বেগুনি */
 }
+
+
+
+
+
+
+
+/* ৬টি কার্ডের গ্রিড লেআউট ফিক্স */
+.service-card-trio {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); /* কার্ডের সাইজ ঠিক রাখা হলো */
+    gap: 30px;
+    padding-bottom: 50px;
+}
+
+/* কার্ডের ভেতরের টেক্সট আলাইনমেন্ট */
+.trio-card h3 {
+    font-size: 1.4rem;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.trio-card p {
+    font-size: 0.95rem;
+    color: #666;
+    line-height: 1.6;
+}
+
+/* এলিভেটেড কার্ডের ইফেক্ট (একটার পর একটা উচু নিচু স্টাইল) */
+.trio-card.elevated {
+    transform: translateY(-15px);
+}
+
+.trio-card:hover, .trio-card.elevated:hover {
+    transform: translateY(-25px);
+    box-shadow: 0 15px 40px rgba(106, 13, 173, 0.15);
+}
+
+/* মোবাইলে সব সমান থাকবে */
+@media (max-width: 768px) {
+    .trio-card.elevated {
+        transform: none;
+    }
+    .trio-card:hover, .trio-card.elevated:hover {
+        transform: translateY(-5px);
+    }
+}
